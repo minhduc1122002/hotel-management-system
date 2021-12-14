@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.HomePageController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="125.0" prefWidth="1000.0" style="-fx-background-color: #2D3347;">
+         <children>
+            <Label layoutX="27.0" layoutY="39.0" text="HOTEL" textFill="#2196f3">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="39.0" text="MANAGEMENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logout" fitHeight="60.0" fitWidth="60.0" layoutX="904.0" layoutY="33.0" onMouseClicked="#handleLogout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-logout-60.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="124.0" prefHeight="149.0" prefWidth="280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="21.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/usericon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="adminName" layoutX="122.0" layoutY="40.0" text="Admin" textFill="#4c587c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#26ff00" layoutX="128.0" layoutY="98.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="140.0" layoutY="88.0" text="Online">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="274.0" prefHeight="526.0" prefWidth="280.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="room" alignment="BASELINE_LEFT" layoutY="150.0" mnemonicParsing="false" onAction="#createRoom" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Room Management">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkin" alignment="BASELINE_LEFT" layoutY="240.0" mnemonicParsing="false" onAction="#createCheckIn" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Customer Check In">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkout" alignment="BASELINE_LEFT" layoutY="330.0" mnemonicParsing="false" onAction="#createCheckOut" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Customer Check Out">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="bill" alignment="BASELINE_LEFT" layoutY="420.0" mnemonicParsing="false" onAction="#createCustomerBill" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="         Customer Bill">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="dash" alignment="BASELINE_LEFT" layoutY="60.0" mnemonicParsing="false" onAction="#createDash" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #ffffff;" text="          Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="holdPane" layoutX="280.0" layoutY="124.0" prefHeight="675.0" prefWidth="720.0" />
+   </children>
+</AnchorPane>

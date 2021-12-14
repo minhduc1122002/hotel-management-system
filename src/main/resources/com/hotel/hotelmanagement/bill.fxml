@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.BillController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="8.0" prefHeight="85.0" prefWidth="690.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-room-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="25.0" text="Bills Details">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="95.0" prefHeight="570.0" prefWidth="690.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="search" layoutX="61.0" layoutY="23.0" onKeyReleased="#handleSearchKey" prefHeight="25.0" prefWidth="212.0" promptText="Type Date" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-search-32.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="billTable" layoutX="28.0" layoutY="87.0" onMouseClicked="#clickBill" prefHeight="458.0" prefWidth="634.0">
+              <columns>
+                <TableColumn fx:id="billID" prefWidth="75.0" text="Bill ID" />
+                <TableColumn fx:id="customerName" prefWidth="114.0" text="Customer Name" />
+                  <TableColumn fx:id="cusIDNumber" prefWidth="136.0" text="Customer ID Number" />
+                  <TableColumn fx:id="roomNumber" prefWidth="127.0" text="Room Number" />
+                  <TableColumn fx:id="Date" prefWidth="90.0" text="Date" />
+                  <TableColumn fx:id="Amount" prefWidth="91.0" text="Amount" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.AddRoomController">
+   <children>
+      <Label layoutX="114.0" layoutY="80.0" text="Add" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="number" layoutX="108.0" layoutY="200.0" prefHeight="25.0" prefWidth="250.0" promptText="Room Number" />
+      <TextField fx:id="type" layoutX="108.0" layoutY="300.0" prefHeight="25.0" prefWidth="250.0" promptText="Room Type" />
+      <TextField fx:id="price" layoutX="108.0" layoutY="400.0" prefHeight="25.0" prefWidth="250.0" promptText="Price" />
+      <Button fx:id="add" layoutX="189.0" layoutY="500.0" mnemonicParsing="false" onAction="#handleAddAction" style="-fx-background-color: #2196f3;" text="Add Room" textFill="WHITE" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="72.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-bed-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="72.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-expensive-price-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="72.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-numbers-input-form-24.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="181.0" layoutY="80.0" text="New Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

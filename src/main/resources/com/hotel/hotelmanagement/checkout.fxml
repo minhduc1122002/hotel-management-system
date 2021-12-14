@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="675.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.CheckOutController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="8.0" prefHeight="85.0" prefWidth="690.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-room-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="56.0" layoutY="25.0" text="Check Out">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="95.0" prefHeight="570.0" prefWidth="690.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="search" layoutX="61.0" layoutY="23.0" onKeyReleased="#handleSearchKey" prefHeight="25.0" prefWidth="212.0" promptText="Type Room Number" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/icons8-search-32.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="roomTable" layoutX="28.0" layoutY="74.0" onMouseClicked="#clickItem" prefHeight="470.0" prefWidth="634.0">
+               <columns>
+                  <TableColumn fx:id="roomNumber" minWidth="95.0" prefWidth="101.0" text="Room Number" />
+                  <TableColumn fx:id="customerName" minWidth="4.0" prefWidth="105.0" text="Customer Name" />
+                  <TableColumn fx:id="checkIn" prefWidth="97.0" text="Check In Date" />
+                  <TableColumn fx:id="checkOut" minWidth="0.0" prefWidth="92.0" text="Check Out Date" />
+                  <TableColumn fx:id="totalDays" minWidth="7.0" prefWidth="73.0" text="Total Days" />
+                  <TableColumn fx:id="totalPrice" prefWidth="83.0" text="Total Price" />
+                  <TableColumn fx:id="status" prefWidth="82.0" text="Status" />
+               </columns>
+            </TableView>
+            <ComboBox fx:id="sort" layoutX="552.0" layoutY="24.0" onAction="#handleComboboxSelection" prefHeight="25.0" prefWidth="110.0" promptText="Sort By" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

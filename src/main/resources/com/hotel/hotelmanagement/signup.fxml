@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotel.hotelmanagement.SignUpController">
+   <children>
+      <Label layoutX="234.0" layoutY="38.0" text="Sign" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="157.0" layoutY="148.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Your Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="username" layoutX="157.0" layoutY="228.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Your Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="password" layoutX="157.0" layoutY="308.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Your Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="answer" layoutX="157.0" layoutY="548.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Your Answer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <RadioButton fx:id="male" layoutX="157.0" layoutY="388.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="374.0" layoutY="388.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="address" layoutX="157.0" layoutY="628.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter Your Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-user-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-lock-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-location-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-gender-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-question-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-stack-exchange-answer-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="116.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res/icons8-name-tag-24.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signup" layoutX="154.0" layoutY="712.0" mnemonicParsing="false" onAction="#handleSignupAction" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #2196f3;" text="Sign Up" textFill="WHITE" />
+      <Button fx:id="login" layoutX="311.0" layoutY="712.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #ffffff;" text="Login" textFill="#2196f3" />
+      <Label layoutX="318.0" layoutY="38.0" text="Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="question" layoutX="159.0" layoutY="469.0" prefHeight="25.0" prefWidth="287.0" promptText="Choose Your Security Question" />
+   </children>
+</AnchorPane>
